@@ -1,10 +1,13 @@
 import React from 'react'
 import pizzaLeft from '../assets/pizzaLeft.jpg'
 import '../styles/Contact.css'
+import { motion } from "framer-motion"
 
 function Contact() {
   return (
-    <div className='contact'>
+    <motion.div className='contact' initial={{opacity:0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}>
         <div className='leftSide' style={{ backgroundImage:`url(${pizzaLeft})` }}></div>
         <div className='rightSide'>
             <h1>Contact Us</h1>
@@ -18,7 +21,7 @@ function Contact() {
                 <button type='submit'>Send Message</button>
             </form>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
