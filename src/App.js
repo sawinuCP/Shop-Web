@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar/>
-        <AnimatedRoutes />
+          <AnimatedRoutes />
         <Footer/>
       </Router>
     </div>
